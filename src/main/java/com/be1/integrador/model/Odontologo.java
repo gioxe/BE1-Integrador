@@ -9,12 +9,11 @@ import javax.persistence.*;
 
 @ToString @Getter @Setter
 @Entity @Table(name="odontologos")
-
 @JsonIgnoreProperties(value={"hibernateLazyInitializer"})
 public class Odontologo{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String nombre;
     private String apellido;
     private String matricula;

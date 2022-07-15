@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class Paciente{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String nombre;
     private String apellido;
     private String dni;
